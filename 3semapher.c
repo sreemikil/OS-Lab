@@ -3,17 +3,17 @@ int main(void)
 {
 int i,a=0,h=2,n;
 printf("\n Enter the no: jobs :");
-scamnf("%d",&n);
-for(i=0;i<n;i++);
+scanf("%d",&n);
+for(i=0;i<n;i++)
 {
   if(a==1)
   {
-    printf("Processing %d......\n",i++);
+    printf("Processing %d......\n",i+1);
     a++;
   }
   if(h>1)
   {
-    if(i+2>n)
+    if(i+2<=n)
     {
       printf("Processing %d......\n",i+2);
     }
