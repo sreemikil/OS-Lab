@@ -77,6 +77,9 @@ int main()
   close(pipefds2[0]);
 
   read(pipefds2[0],readmessage,sizeof(pipe2writemsg));
+  printf("In Child: Reading from pipe1 message is %s\n",readmessage);
+ printf("In Child: Writing to pipe2 message is %s\n",pipe2writemsg);
+read(pipefds2[1],pipe2writemsg,sizeof(pipe2writemsg));
 
  }
 
